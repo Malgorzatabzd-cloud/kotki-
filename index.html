@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świat Kotów 🐱</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9a76, #ff6f61);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff9a76;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 35px;
+            color: #e85d4a;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card .cat {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #e85d4a;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .facts {
+            background: #ffe4d6;
+            max-width: none;
+        }
+
+        .facts-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .fact-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .fact {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery div {
+            height: 220px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            background: linear-gradient(135deg, #ffd6c9, #fff0e8);
+            transition: 0.3s;
+        }
+
+        .gallery div:hover {
+            transform: scale(1.04);
+        }
+
+        .contact {
+            text-align: center;
+            background: #ff6f61;
+            color: white;
+            max-width: none;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: white;
+            color: #e85d4a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #333;
+            color: white;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐱 Świat Kotów</h1>
+        <p>Wszystko, co warto wiedzieć o naszych mruczących przyjaciołach</p>
+    </header>
+
+    <nav>
+        <a href="#o-kotach">O kotach</a>
+        <a href="#rasy">Rasy</a>
+        <a href="#ciekawostki">Ciekawostki</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="o-kotach">
+        <h2>🐾 O kotach</h2>
+
+        <p class="intro">
+            Koty to jedne z najpopularniejszych zwierząt domowych na świecie.
+            Są niezależne, ciekawskie, inteligentne i potrafią nawiązać
+            wyjątkową więź ze swoimi opiekunami. Uwielbiają spać, bawić się
+            i oczywiście... jeść! 😺
+        </p>
+    </section>
+
+    <section id="rasy">
+        <h2>😻 Popularne rasy kotów</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="cat">🐈</div>
+                <h3>Kot brytyjski</h3>
+                <p>
+                    Spokojny, przyjazny i bardzo charakterystyczny dzięki
+                    swojej puszystej sierści.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="cat">😺</div>
+                <h3>Maine Coon</h3>
+                <p>
+                    Jedna z największych ras kotów domowych. Znany z dużych
+                    rozmiarów i łagodnego charakteru.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="cat">🐱</div>
+                <h3>Kot syjamski</h3>
+                <p>
+                    Towarzyski i bardzo komunikatywny kot o charakterystycznym
+                    umaszczeniu.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="cat">😸</div>
+                <h3>Ragdoll</h3>
+                <p>
+                    Spokojny i niezwykle łagodny kot, który często uwielbia
+                    być noszony na rękach.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="facts" id="ciekawostki">
+        <div class="facts-container">
+
+            <h2>🧠 Ciekawostki o kotach</h2>
+
+            <div class="fact-list">
+
+                <div class="fact">
+                    💤 <strong>Koty dużo śpią</strong><br>
+                    Dorosły kot może przesypiać nawet kilkanaście godzin
+                    dziennie.
+                </div>
+
+                <div class="fact">
+                    👂 <strong>Świetny słuch</strong><br>
+                    Koty potrafią słyszeć dźwięki o znacznie wyższych
+                    częstotliwościach niż ludzie.
+                </div>
+
+                <div class="fact">
+                    🐾 <strong>Miękkie łapki</strong><br>
+                    Poduszki na łapach pomagają kotom poruszać się niemal
+                    bezgłośnie.
+                </div>
+
+                <div class="fact">
+                    ❤️ <strong>Mruczenie</strong><br>
+                    Mruczenie jest jednym z najbardziej charakterystycznych
+                    dźwięków wydawanych przez koty.
+                </div>
+
+                <div class="fact">
+                    🧼 <strong>Czystość</strong><br>
+                    Koty spędzają dużą część dnia na pielęgnowaniu swojego
+                    futra.
+                </div>
+
+                <div class="fact">
+                    🦘 <strong>Skoki</strong><br>
+                    Koty mają bardzo silne tylne łapy, które pomagają im
+                    wykonywać imponujące skoki.
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>📸 Kocia galeria</h2>
+
+        <div class="gallery">
+            <div>🐱</div>
+            <div>😺</div>
+            <div>😸</div>
+            <div>😻</div>
+            <div>🙀</div>
+            <div>😽</div>
+        </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+        <h2>🐾 Kochasz koty?</h2>
+
+        <p>
+            Ta strona jest poświęcona wszystkim miłośnikom kotów!
+        </p>
+
+        <a href="#o-kotach" class="button">Wróć na górę 🐱</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Świat Kotów 🐱 | Stworzone z miłości do kotów ❤️</p>
+    </footer>
+
+</body>
+</html>
